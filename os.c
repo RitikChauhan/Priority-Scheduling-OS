@@ -24,18 +24,18 @@ void main()
    if(pr[i]>pr[j])
  {
    temp1=pr[i];
- pr[i]=pr[j];
-  pr[j]=temp1;
-  temp1=pt[i];
-  pt[i]=pt[j];
-  pt[j]=temp1;
- strcpy(temp,p[i]);
- strcpy(p[i],p[j]);
-  strcpy(p[j],temp);
+   pr[i]=pr[j];
+   pr[j]=temp1;
+   temp1=pt[i];
+   pt[i]=pt[j];
+   pt[j]=temp1;
+   strcpy(temp,p[i]);
+   strcpy(p[i],p[j]);
+   strcpy(p[j],temp);
   }
   }
   }
- wt[0]=0;
+  wt[0]=0;
   for(i=1;i<n;i++)
   {
    wt[i] = wt[i-1] + pt[i-1];
