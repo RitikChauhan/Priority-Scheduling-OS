@@ -41,8 +41,8 @@ void main()
    wt[i] = wt[i-1] + pt[i-1];
    totwt=totwt+wt[i];
    }   
-avgwt=(float)totwt/n;   
-printf("p_name\t p_time\t priority\t w_time\n");
+  avgwt=(float)totwt/n;   
+  printf("p_name\t p_time\t priority\t w_time\n");
 for(i=0;i<n;i++)  
 {
    printf(" %s\t %d\t %d\t %d\n" ,p[i],pt[i],pr[i],wt[i]);
